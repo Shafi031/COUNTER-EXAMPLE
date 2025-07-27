@@ -40,6 +40,12 @@ export default function Counter(){
         background:'grey'
     }
 
+    const [toggle,setToggle]=useState(false)
+
+    const handleToggle=()=>{
+         setToggle(!toggle)
+    }
+
 
     return(
         <div style={Card}>
@@ -47,6 +53,14 @@ export default function Counter(){
             <button style={CardStyle} onClick={handleAdd}>ADD</button>
             <button style={CardStyle} onClick={handleRemove}>REMOVE</button>
             <button style={CardStyle} onClick={handleZero}>UNDA</button>
+
+            <div>
+                <button onClick={handleToggle}>{toggle ? "Hide" : "Visible"}</button>
+
+                {toggle && <p>HI i am Shafi</p>}
+            </div>
         </div>
+
+        
     )
 }
