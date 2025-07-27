@@ -48,6 +48,8 @@ export default function Counter(){
 
 
     return(
+
+    
         <div style={Card}>
             <h3 style={countStyle}>Count: {count}</h3>
             <button style={CardStyle} onClick={handleAdd}>ADD</button>
@@ -62,5 +64,6 @@ export default function Counter(){
         </div>
 
         
+    
     )
 }
